@@ -20,9 +20,9 @@ export default function RootLayout({
     <>
       <html lang="en">
         <head>
-          <title>Nenes Product App</title>
           <link rel="icon" href="https://i.ibb.co/qjvp9L7/8405d0b564e86a7ba13fe5ade52cca7d-cubo-amarillo-plano.png" />
         </head>
+        <title>Nenes Product App</title>
         <body className={inter.className}>
           <Navbar />
           {children}
