@@ -7,3 +7,9 @@ export interface AppTitleProps {
     slogan: string
     imageUrl: string
 }
+
+export interface ProductDetailPageProps {
+    params: {
+        productTitle: string;
+    };
+}
