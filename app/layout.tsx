@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar/Navbar";
+import Footer from "@/components/Footer/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,10 +19,14 @@ export default function RootLayout({
   return (
     <>
       <html lang="en">
-        <title>Nenes Product App</title>
+        <head>
+          <title>Nenes Product App</title>
+          <link rel="icon" href="https://i.ibb.co/qjvp9L7/8405d0b564e86a7ba13fe5ade52cca7d-cubo-amarillo-plano.png" />
+        </head>
         <body className={inter.className}>
-          <Navbar/>
+          <Navbar />
           {children}
+          <Footer/>
         </body>
       </html>
     </>

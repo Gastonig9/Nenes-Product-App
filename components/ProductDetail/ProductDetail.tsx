@@ -10,11 +10,9 @@ const ProductDetail = ({ title }: { title: string }) => {
 
   useEffect(() => {
     if (typeof title === "string") {
-      // Decodifica el título de la URL
       const decodedTitle = decodeURIComponent(title);
-      // Busca el producto por título en los datos
       const foundProduct = data.find((p) => p.title === decodedTitle);
-      setProduct(foundProduct || null); // Si no se encuentra, establece product en null
+      setProduct(foundProduct || null);
     }
   }, [title]);
 
