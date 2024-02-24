@@ -1,4 +1,4 @@
-# Mi Aplicación con Next.js 14
+# Nenes Product App
 
 Este es un proyecto construido con Next.js 14.
 
